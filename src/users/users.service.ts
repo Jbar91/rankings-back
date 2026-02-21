@@ -61,9 +61,6 @@ export class UsersService {
     }
   }
 
-  /**
-   * Helper to handle ranking shifts
-   */
   private async shiftRankings(newRank: number, oldRank: number | null) {
     const queryBuilder = this.userRepository.createQueryBuilder().update(User)
 
